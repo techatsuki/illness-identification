@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Heart Prediction</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel="stylesheet" href="../static/css/heart.css">
+
+  
+</head>
+
+<body>
+   
+
+
+
+<div id="FormContainer">
+  <div class="ImgContainer">
+
+
+  </div>
+  <form id="Form" method="post" action="#">
+      <h1 id="FormHeading">Heart Prediction</h1>
+      <div class="firstrow">
+          <li><label for="age">Age:</label>
+              <input type="number" id="age" name="age" placeholder="Enter your age">
+          </li>
+          <li><label for="cp">Chest pain Type:</label>
+            <select name="cp" id="cp">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+            </select>
+          </li>
+      </div>
+      <li>
+        <label for="chol">Enter the cholestoral in mg/dl fetched via BMI sensor:</label>
+        <input type="number" id="chol" name="chol">
+        
+      </li>
+      <div class="secondrow">
+          <li>
+            <label for="sex" id="sex">Gender (M=1,F=0)</label>
+              <!-- <select>
+                <option value="1"   name="sex" >Male</option>
+                <option value="0"   name="sex" >Female</option>
+              <select> -->
+                <input type="number" id="sex" name="sex" placeholder="sex(1 or 0)">
+          <li>
+            <label for="trestbps">Resting Blood Pressure:</label>
+            <input type="number" id="trestbps" name="trestbps">
+          </li>
+      </div>
+      <div class="thirdrow">
+          <li><label for="fbs">Fasting blood sugar > 120 mg/dl</label>
+            <!-- <select>
+              <option id="fbs" name="fbs" value="1">True</option>
+              <option id="fbs" name="fbs" value="0">False</option>
+          <select> -->
+            <input type="number" id="fbs" name="fbs" placeholder="True=1 False=0">
+            <li><label for="restecg">Electrocardiographic results</label>
+                <!-- <select>
+                  <option id="restecg" value="1" name="restecg">True</option>
+                  <option id="restecg" value="0" name="restecg">False</option>
+              <select>-->
+                <input type="number" id="restecg" name="restecg" placeholder="True=1 False=0">
+
+              </li> 
+          <li><label for="thalach">Enter the maximum heart rate achieved</label>
+            <input type="number" id="thalach" name="thalach" placeholder="max=220"> </li>
+          <li><label for="oldpeak">Enter the Previous peak:</label>
+            <input type="float" id="oldpeak" name="oldpeak"></li>
+          
+      </div>
+      
+      <button type="submit">Submit</button>
+      <p style="color: aliceblue;">Explaination of above content: <a href="/def">Click</a></p>
+
+  </form>
+
+</div>
+
+
+
+  <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+
+    <script src="./static/js/heart.js"></script>
+
+</body>
+</html>

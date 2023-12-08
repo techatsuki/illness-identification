@@ -1,0 +1,361 @@
+{% extends "base.html" %} {% block title %}disease{% endblock %} {% block content %}
+
+
+        <!--::header part start::-->
+        <header class="main_menu home_menu">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-12">
+                        <nav class="navbar navbar-expand-lg navbar-light">
+                            <a class="navbar-brand" href="index.html"> <img src="../static/img/logo.png" alt="logo"> </a>
+                            <button class="navbar-toggler" type="button" data-toggle="collapse"
+                                data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                                aria-expanded="false" aria-label="Toggle navigation">
+                                <span class="navbar-toggler-icon"></span>
+                            </button>
+    
+                            <div class="collapse navbar-collapse main-menu-item justify-content-center"
+                                id="navbarSupportedContent">
+                                <ul class="navbar-nav align-items-center">
+                                    <li class="nav-item active">
+                                        <a class="nav-link" href="/">Home</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="/about">about</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="/disease">Diseases</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="/contact">Contact</a>
+                                    </li>
+                                </li>
+                                <!-- <li class="nav-item">
+                                    <a class="genric-btn primary-border radius" href="/login">SignIn</a>
+                                </li>
+                                <li class="nav-item col-xl-2">
+                                    <a class="genric-btn primary radius" href="/signup">SignUp</a>
+                                </li> -->
+                                <li class="nav-item">
+                                    <div class="nav-item dropdown">
+                                        <a href="#" data-toggle="dropdown" class="nav-item nav-link dropdown-toggle user-action"><img src="../static/img/profile.png" style="border-radius: 50px;" class="avatar" alt="Avatar">{{current_user.first_name}}<b class="caret"></b></a>
+                                        <div class="dropdown-menu">
+                                            <a href="/profile" class="dropdown-item"><i class="fa fa-user-o"></i> Profile</a>
+                                            <!-- <a href="#" class="dropdown-item"><i class="fa fa-calendar-o"></i> Calendar</a> -->
+                                            <a href="/profile-edit" class="dropdown-item"><i class="fa fa-sliders"></i> Settings</a>
+                                            <div class="divider dropdown-divider"></div>
+                                            <a href="/logout" class="dropdown-item"><i class="material-icons">&#xE8AC;</i> Logout</a>
+                                        </div>
+                                    </div>
+                                </li>
+                     
+                                </ul>
+                            </div>
+                            <a class="btn_2 d-none d-lg-block" href="#">PHONE- 04546263900</a>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </header>
+        <!-- Header part end-->
+     <!-- banner part start-->
+     <section class="banner_part">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-5 col-xl-5">
+                    <div class="banner_text">
+                        <div class="banner_text_iner">
+                            <h1>I-DETECT</h1>
+                            <p>"Here, you can easily check your body condition by entering your problems in the text field. You can also chat with us to clarify your doubts by consulting with our experts. If you want to assess your body condition, simply click the button below." </p>
+                            <a href="#" class="btn_2">Explore</a>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-7">
+                    <div class="banner_img">
+                        <img src="../static/img/banner_img.png" alt="">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- banner part start-->
+
+    <!-- about us part start-->
+    <section class="about_us padding_top">
+        <div class="container">
+            <div class="row justify-content-between align-items-center">
+                <div class="col-md-6 col-lg-6">
+                    <div class="about_us_img">
+                        <img src="../static/img/top_service.png" alt="">
+                    </div>
+                </div>
+                <div class="col-md-6 col-lg-5">
+                    <div class="about_us_text">
+                        <h2>About us</h2>
+                        <p>This Web application is developed by the 3rd year computer science engineering students using Artificial intelligence and machine learning. Our team members are (Saran,Ram prasad,Lishanth,Yogesh.)</p>
+                        <a class="btn_2 " href="#">learn more</a>
+                        <div class="banner_item">
+                            <div class="single_item">
+                                <img src="../static/img/icon/banner_1.svg" alt="">
+                                <h5>Emergency</h5>
+                            </div>
+                            <div class="single_item">
+                                <img src="../static/img/icon/banner_2.svg" alt="">
+                                <h5>Appointment</h5>
+                            </div>
+                            <div class="single_item">
+                                <img src="../static/img/icon/banner_3.svg" alt="">
+                                <h5>Qualfied</h5>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- about us part end-->
+
+    <!-- feature_part start-->
+    <section class="feature_part">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xl-8">
+                    <div class="section_tittle text-center">
+                        <h2>Our services</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row justify-content-between align-items-center">
+                <div class="col-lg-3 col-sm-12">
+                    <div class="single_feature">
+                        <div class="single_feature_part">
+                            <span class="single_feature_icon"><img src="../static/img/icon/feature_1.svg" alt=""></span>
+                            <h4>Better Prediction</h4>
+                            <p>Darkness multiply rule Which from without life creature blessed
+                                give moveth moveth seas make day which divided our have.</p>
+                        </div>
+                    </div>
+                    <div class="single_feature">
+                        <div class="single_feature_part">
+                            <span class="single_feature_icon"><img src="../static/img/icon/feature_2.svg" alt=""></span>
+                            <h4>Better Future</h4>
+                            <p>Darkness multiply rule Which from without life creature blessed
+                                give moveth moveth seas make day which divided our have.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-sm-12">
+                        <div class="single_feature_img">
+                            <img src="../static/img/service.png" alt="">
+                        </div>
+                </div>
+                <div class="col-lg-3 col-sm-12">
+                    <div class="single_feature">
+                        <div class="single_feature_part">
+                            <span class="single_feature_icon"><img src="../static/img/icon/feature_1.svg" alt=""></span>
+                            <h4>Better Accuracy</h4>
+                            <p>Darkness multiply rule Which from without life creature blessed
+                                give moveth moveth seas make day which divided our have.</p>
+                        </div>
+                    </div>
+                    <div class="single_feature">
+                        <div class="single_feature_part">
+                            <span class="single_feature_icon"><img src="../static/img/icon/feature_2.svg" alt=""></span>
+                            <h4>Better Life</h4>
+                            <p>Darkness multiply rule Which from without life creature blessed
+                                give moveth moveth seas make day which divided our have.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- feature_part start-->
+
+    <!-- our Solution part start-->
+    <section class="our_depertment section_padding">
+        <div class="container">
+            <div class="row justify-content-center text-center">
+                <div class="col-xl-12">
+                    <div class="depertment_content">
+                        <div class="row justify-content-center">
+                            <div class="col-xl-8">
+                                <h2>Our Solutions</h2>
+                                <div class="row">
+                                    <div class="col-lg-6 col-sm-6">
+                                        <div class="single_our_depertment">
+                                            <span class="our_depertment_icon"><img src="../static/img/icon/feature_2.svg"
+                                                    alt=""></span>
+                                            <h4>Heart Disease Prediction</h4>
+                                            <p>Heart disease, also known as cardiovascular disease (CVD), encompasses a range of conditions that affect the heart and blood vessels. These conditions can have a significant impact on the heart's ability to function properly. Heart disease is a leading cause of death worldwide, and it comes in various forms.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-sm-6">
+                                        <div class="single_our_depertment">
+                                            <span class="our_depertment_icon"><img src="../static/img/icon/feature_2.svg"
+                                                    alt=""></span>
+                                            <h4>predicting Lung Cancer</h4>
+                                            <p>Lung cancer is a type of cancer that begins in the lungs. It is one of the most common and deadliest forms of cancer worldwide. Lung cancer can be broadly categorized into two main types: non-small cell lung cancer (NSCLC) and small cell lung cancer (SCLC), each with distinct characteristics, treatments, and prognosis.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-sm-6">
+                                        <div class="single_our_depertment">
+                                            <span class="our_depertment_icon"><img src="../static/img/icon/feature_2.svg"
+                                                    alt=""></span>
+                                            <h4>Predicting Stroke</h4>
+                                            <p>A "stroke," in the medical context, refers to a sudden and often serious medical condition that occurs when there is a disruption in the blood supply to a part of the brain. This interruption in blood flow can lead to damage or death of brain cells within minutes. Strokes are also sometimes called "cerebrovascular accidents" (CVAs) because they are related to the blood vessels in the brain.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-6 col-sm-6">
+                                        <div class="single_our_depertment">
+                                            <span class="our_depertment_icon"><img src="../static/img/icon/feature_2.svg"
+                                                    alt=""></span>
+                                            <h4>Diabetes Prediction</h4>
+                                            <p>Diabetes is a chronic (long-lasting) health condition that affects how your body turns food into energy. Your body breaks down most of the food you eat into sugar (glucose) and releases it into your bloodstream. When your blood sugar goes up, it signals your pancreas to release insulin.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- our solution part end-->
+
+    <!--::doctor_part start::-->
+    <section class="doctor_part section_padding">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="col-xl-8">
+                    <div class="section_tittle text-center">
+                        <h2>Our Predictions</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-sm-6 col-lg-3">
+                    <div class="single_blog_item">
+                        <div class="single_blog_img">
+                            <img src="../static/img/heart_disease.jpg" alt="Heart pic">
+                        </div>
+                        <div class="single_text">
+                            <div class="single_blog_text">
+                                <h3>Heart Disease Prediction</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <div class="single_blog_item">
+                        <div class="single_blog_img">
+                            <img src="../static/img/lung_cancer.jpg" alt="Lungs pic">
+                        </div>
+                        <div class="single_text">
+                            <div class="single_blog_text">
+                                <h3>predicting Lung Cancer</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <div class="single_blog_item">
+                        <div class="single_blog_img">
+                            <img src="../static/img/stroke1.jpg" alt="Brain pic">
+                        </div>
+                        <div class="single_text">
+                            <div class="single_blog_text">
+                                <h3>Predicting Stroke</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-6 col-lg-3">
+                    <div class="single_blog_item">
+                        <div class="single_blog_img">
+                            <img src="../static/img/diabetes1.jpg" alt="Diabetes pic">
+                        </div>
+                        <div class="single_text">
+                            <div class="single_blog_text">
+                                <h3>Diabetes Prediction</h3>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--::doctor_part end::-->
+
+    <!--::regervation_part start::-->
+    <section class="regervation_part section_padding">
+        <div class="container">
+            <div class="row align-items-center regervation_content">
+                <div class="col-lg-7">
+                    <div class="regervation_part_iner">
+                        <form>
+                            <h2>Make Feedback</h2>
+                            <div class="form-row">
+                                <div class="form-group col-md-6">
+                                    <input type="email" class="form-control" id="inputEmail4" placeholder="Name">
+                                </div>
+                                <div class="form-group col-md-6">
+                                    <input type="password" class="form-control" id="inputPassword4"
+                                        placeholder="Email address">
+                                </div>
+                                <div class="form-group col-md-12">
+                                    <select class="form-control" id="Select">
+                                        <option value="1" selected>Select service</option>
+                                        <option value="2">Name of service</option>
+                                        <option value="3">Name of service</option>
+                                        <option value="4">Name of service</option>
+                                        <option value="5">Name of service</option>
+                                    </select>
+                                </div>
+                                <div class="form-group col-md-12">
+                                    <textarea class="form-control" id="Textarea" rows="4"
+                                        placeholder="Your Feedback "></textarea>
+                                </div>
+                            </div>
+                            <div class="regerv_btn">
+                                <a href="#" class="btn_2">Submit</a>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-5 col-md-6">
+                    <div class="reservation_img">
+                        <img src="../static/img/reservation.png" alt="" class="reservation_img_iner">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!--::regervation_part end::-->
+
+
+
+    <!-- jquery plugins here-->
+    <script src="../static/js/jquery-1.12.1.min.js"></script>
+    <!-- popper js -->
+    <script src="../static/js/popper.min.js"></script>
+    <!-- bootstrap js -->
+    <script src="../static/js/bootstrap.min.js"></script>
+    <!-- owl carousel js -->
+    <script src="../static/js/owl.carousel.min.js"></script>
+    <script src="../static/js/jquery.nice-select.min.js"></script>
+    <!-- contact js -->
+    <script src="../static/js/jquery.ajaxchimp.min.js"></script>
+    <script src="../static/js/jquery.form.js"></script>
+    <script src="../static/js/jquery.validate.min.js"></script>
+    <script src="../static/js/mail-script.js"></script>
+    <script src="../static/js/contact.js"></script>
+    <!-- custom js -->
+    <script src="../static/js/custom.js"></script>
+    
+
+{% endblock %}

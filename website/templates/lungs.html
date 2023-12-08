@@ -1,0 +1,57 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lungs Prediction</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+  
+      <link rel="stylesheet" href="../static/css/lungs.css">
+</head>
+<body>
+  
+<div id="FormContainer">
+    <div class="ImgContainer">
+  
+  
+    </div>
+    <form id="Form" method="post" action="#">
+        <h1 id="FormHeading">Lungs Prediction</h1>
+        <div class="firstrow">
+            <li><label for="age">Age:</label>
+                <input type="number" id="age" name="age" placeholder="Enter your age" required>
+            </li>
+            
+        </div>
+        
+        <div class="secondrow">
+            <li><label for="Smokes">Enter your Smokes:</label>
+                <input type="number" id="Smokes" name="Smokes" placeholder="Per day" min="0" max="100" required>
+            </li>
+           
+        </div>
+        <div class="thirdrow">
+            <li>
+                <label for="AreaQ">Enter the AreaQ:</label>
+                <input type="number" id="AreaQ" name="AreaQ">
+            </li>
+        </div>
+        <div class="fourthrow">
+            <li><label for="Alkhol">Enter Alkhol you takes in a Week</label>
+            <input type="number" id="Alkhol" name="Alkhol">
+            </li>
+        </div>
+        
+        <button type="submit">Submit</button>
+        <p style="color: aliceblue;">Explaination of above content: <a href="/def">Click</a></p>
+
+    </form>
+  
+  </div>
+
+<script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+
+    <script src="../static/js/lungs.js"></script>
+</body>
+</html>

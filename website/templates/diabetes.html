@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html >
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Diabetes Prediction</title>
+  <link href="https://fonts.googleapis.com/css?family=Roboto:300,400" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+  <link rel="stylesheet" href="../static/css/diabetes.css">
+
+  
+</head>
+
+<body>
+
+
+
+<div id="FormContainer">
+  <div class="ImgContainer">
+
+
+  </div>
+  <form id="Form" method="post" action="#">
+      <h1 id="FormHeading">Diabetes Prediction</h1>
+      <div class="firstrow">
+          <li><label for="Pregnancies">Pregnancies :</label>
+            <input class="form-control" type="number" name="Pregnancies" id="Pregnancies" placeholder="0 to 10" min="0" max="10" required>
+          </li>
+          <li><label for="Glucose">Glucose Level:</label> 
+            <input type="number" id="Glucose" name="Glucose" placeholder="Glucose Level">
+          </li>
+      </div>
+      <li>
+        <label for="SkinThickness">Enter Your Skin SkinThickness Level:</label>
+        <input type="number" id="SkinThickness" name="SkinThickness" placeholder="SkinThickness Level">
+      </li>
+      <div class="secondrow">
+          <li><label for="BloodPressure">Enter Your BloodPressure:</label>
+            <input type="number" id="BloodPressure" name="BloodPressure" placeholder="BloodPressure">
+          
+      </div>
+      <div class="thirdrow">
+          <li><label for="Age">Enter Your Age</label>
+            <input type="number" id="Age" name="Age" placeholder="Age">
+            <li><label for="Insulin">Your Insulin Level</label>
+            <input type="number" id="Insulin" name="Insulin" placeholder="Insulin Level"></li>
+      </div>
+
+            <div class="fourthrow">
+          <li><label for="bmi">Body Mass index:</label> <input type="float" id="BMI" name="BMI" placeholder="Example: 27.2"></li>
+          </div>
+      
+      <button type="submit">Submit</button>
+      <p style="color: aliceblue;">note: if you want to calculate bmi <a href="/bmi">BMI</a></p>
+      <p style="color: aliceblue;">Explaination of above content: <a href="/def">Click</a></p>
+  </form>
+
+</div>
+
+  <script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+
+    <script src="../static/js/diabetes.js"></script>
+
+</body>
+</html>

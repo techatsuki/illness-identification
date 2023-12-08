@@ -1,0 +1,21 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Result</title>
+  <link rel="stylesheet" href="../static/css/sorry.css">
+</head>
+<body>
+  <div class="container">
+    <div class="cookiesContent" id="cookiesPopup">
+      <button class="close">✖</button>
+      <img src="../static/img/sick.png" alt="sick-img" />
+      <h2>You may have chances of disease </h2>
+      <h4>Kindly consult your doctor :)</h4>
+      <p>Disease Possibility Percentage {{accuracy}}</p>
+
+      <div role="progressbar" aria-valuenow="67" aria-valuemin="0" aria-valuemax="100" style="--value: {{accuracy}}"></div>
+    </div>
+  </div>
+</body>
+</html>
